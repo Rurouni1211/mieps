@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="bg-gray-100">
     <section id="info" class="relative w-full h-screen bg-cover bg-center flex flex-col items-center text-center p-5"
@@ -14,78 +14,134 @@
          <img src="images/logo.png" alt="logo" class="absolute left-0 top-0 m-9 w-20 h-14 sm:m-9 sm:ml-16 sm:w-20 sm:h-14 md:w-24 md:h-18 lg:w-28 lg:h-20">
 
         <div class="absolute top-0 right-0 p-5">
-            <button id="menu-btn" class="focus:outline-none burger lg:hidden">
+            <button id="menu-btn" class="focus:outline-none burger mr-3 lg:hidden">
                 <div></div>
                 <div></div>
                 <div></div>
             </button>
-            <ul id="menu" class="hidden absolute top-6 right-8 bg-white p-5 shadow-lg rounded-lg lg:flex lg:relative  lg:shadow-none lg:bg-transparent lg:gap-10 lg:whitespace-nowrap">
+            <ul id="menu" class="hidden absolute top-6 right-8 bg-white p-5 mt-5 shadow-lg rounded-lg lg:flex lg:relative  lg:shadow-none lg:bg-transparent lg:gap-10 lg:whitespace-nowrap lg:mt-0">
                 <li class="text-blue-300 hover:text-blue-500 text-2xl"><a href="#">Home</a></li>
-                <li class="text-blue-300 hover:text-blue-500 text-2xl" ><a href="#">About Us</a></li>
+                <li class="text-blue-300 hover:text-blue-500 text-2xl" ><a href="pages/about.html">About Us</a></li>
                 <li class="text-blue-300 hover:text-blue-500 text-2xl"><a href="#">Education</a></li>
                 <li class="text-blue-300 hover:text-blue-500 text-2xl"><a href="#">Research</a></li>
                 <li class="text-blue-300 hover:text-blue-500 text-2xl"><a href="#">News</a></li>
             </ul>
         </div>
-        <div class="content mt-8">
-            <p class="text-xl">
-                welcome to the <br>
-                <span class="font-bold text-2xl">Myanmar Institute of Earth and Planetary Sciences</span>
-            </p>
-            <p class="second-content mt-4 text-lg">
-                Uncovering The secrets of the Earth and beyond, shaping the future of community
-            </p>
+        <div class="flex flex-col items-start text-left p-6 w-full">
+            <div class="pt-20 ml-5  max-w-4 lg:ml-20 lg:max-w-16 lg:mt-60">
+                <p class="text-xl">
+                    welcome to the
+                </p>
+                <p class="font-bold text-2xl mt-4 text-yellow-200">
+                    Myanmar Institute of Earth and Planetary Sciences
+                </p>
+            </div>
+            
+            <div class="mt-14 ml-5 w-full lg:ml-20 lg:w-full">
+                <p class="text-3xl font-bold">
+                    Uncovering The secrets of the Earth and beyond, shaping the future of community
+                </p>
+            </div>
         </div>
+        
     </section>
     <section id="content" class="p-16 bg-yellow-200">
-    <div class="grid md:grid-cols-2 gap-6 lg:px-48">
-        <div>
-            <h3 class="text-center mb-4 text-2xl font-bold">OUR RESEARCH PROJECT</h3>
-            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <div>
-                    <img src="images/1.jpg" alt="" class="w-full h-auto">
-                    <p class="text-center">Speleology</p>
+        <div class="grid md:grid-cols-2 gap-6 lg:px-48">
+            <div>
+                <h3 class="text-center mb-4 text-2xl font-bold">OUR RESEARCH PROJECT</h3>
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+                    <div class="flex flex-col items-center">
+                        <img src="images/1.jpg" alt="" class="w-full h-auto flex-1">
+                        <p class="text-center mt-2">Speleology</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="images/2.jpg" alt="" class="w-full h-auto flex-1">
+                        <p class="text-center mt-2">Mining Geology</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="images/4.jpg" alt="" class="w-full h-auto flex-1">
+                        <p class="text-center mt-2">Natural Disaster</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="images/5.jpg" alt="" class="w-full h-auto flex-1">
+                        <p class="text-center mt-2">Resource and Environment</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/2.jpg" alt="" class="w-full h-auto">
-                    <p class="text-center">Mining Geology</p>
+            </div>
+            <div>
+                <h3 class="text-center mb-4 text-2xl font-bold">NOTICEBOARD</h3>
+                <div class="my-4 border-t-2 border-blue-500"></div>
+                <div class="mb-4">
+                    <p class="text-center">Structural Geology and Tectonics Short course ၏ SECOND BATCH ကို စတင် လက်ခံနေပါပြီ။</p>
+                    <p class="text-red-600 text-center">Registration Deadline: 31 July 2024</p>
+                    <div class="flex justify-center mt-2">
+                        <a href="https://docs.google.com/forms/d/11cg3OPPphYij2Lof38oKIB1JwpiPynf2RpzddQNonRc/edit?usp=drivesdk" target="_blank">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">Register</button>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/4.jpg" alt="" class="w-full h-auto">
-                    <p class="text-center">Natural Disaster</p>
+                <div class="border bg-blue-300 rounded-lg">
+                    <p class="m-5">ဤသင်တန်းသည် အချိန်အားဖြင့် (၃) လ သတ်မှတ်ထားပြီး ဘူမိဗေဒ ဘွဲ့ကြို၊ ဘွဲ့လွန် ကျောင်းသူ ကျောင်းသားများ၊ ဆရာ ဆရာမများ၊ လုပ်ငန်းခွင် အသီးသီးတွင် ဝင်ရောက်လုပ်ကိုင်နေကြသော ဘူမိဗေဒ ဘွဲ့ရများပါ တက်ရောက်လေ့လာသင်ယူနိုင်ရန် စီစဉ်ထားပါသည်။ <a href="#" class="text-blue-500 underline">Read more</a></p>
                 </div>
-                <div>
-                    <img src="images/5.jpg" alt="" class="w-full h-auto">
-                    <p class="text-center">Resource and Environment</p>
+                <h3 class="text-center mt-6 mb-4 text-2xl font-bold">SPECIAL LECTURES</h3>
+                <div class="border-t-2 border-blue-500 my-4"></div>
+                <div class="mb-4">
+                    <p class="text-center">Register for Special Lecture Series On</p>
+                    <p class="font-bold text-center text-3xl text-red-400 my-6">"Tectonics of Myanmar and SE Asia"</p>
+                    <div class="flex justify-center mt-2">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSek2ugu6vyZWWDQKhnZvKOwz8UVNyLJmb72q4yO_L3JME7fgw/viewform?usp=sf_link" target="_blank">
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2">Register</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <h3 class="text-center mb-4 text-2xl font-bold">NOTICEBOARD</h3>
-            <div class="my-4 border-t-2 border-blue-500"></div>
-            <div class="mb-4">
-                <p class="text-center">Structural Geology and Tectonics Short course ၏ SECOND BATCH ကို စတင် လက်ခံနေပါပြီ။</p>
-                <p class="text-red-600 text-center">Registration Deadline: 31 July 2024</p>
-                <div class="flex justify-center mt-2">
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2 ">Register</button>
+    </section>
+    <section id="discipline">
+        <div class="flex justify-center p-5 bg-blue-300">
+            <img src="/images/disciplines.JPG" alt="" class="w-auto h-auto">
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white p-8">
+    <div class="container mx-auto">
+        <div class="flex flex-col lg:flex-row lg:justify-start lg:items-center space-x-6 space-y-4 lg:space-y-0 lg:space-x-28">
+            <!-- Logo and Text Column -->
+            <div class="flex flex-col items-center mb-4 lg:mb-0 lg:items-start">
+                <img src="images/bw-logo.gif" alt="logo" class="m-2 w-24 h-14 md:w-28 md:h-18 lg:w-28 lg:h-20">
+                <p class="text-white font-bold text-center lg:text-left">Myanmar Institute of Earth and Planetary Sciences</p>
+            </div>
+            <div>
+            <!-- Navigation Links Column -->
+                <ul class="flex gap-2 justify-center mr-7 lg:gap-4">
+                    <li class="text-blue-300 hover:text-blue-500 text-lg"><a href="#">Home</a></li>
+                    <li class="text-blue-300 hover:text-blue-500 text-lg"><a href="#">About Us</a></li>
+                    <li class="text-blue-300 hover:text-blue-500 text-lg"><a href="#">Education</a></li>
+                    <li class="text-blue-300 hover:text-blue-500 text-lg"><a href="#">Research</a></li>
+                    <li class="text-blue-300 hover:text-blue-500 text-lg"><a href="#">News</a></li>
+                </ul>
+                <div class="border border-t-2 mt-0 border-blue-600"></div>
+            </div>
+            <div>
+                <div class="bg-blue-400 p-6 mt-6 rounded-tl-full rounded-br-full border-4 border-blue-500 shadow-lg max-w-sm mx-auto ">
+                    <div class="text-center">
+                        <p class="text-black font-bold text-center mr-4 my-2">Contact Us</p>
+                        <p class="text-black mr-2">Administration and Student Affairs</p>
+                        <a href="#" class="text-black mr-8 hover:cursor-pointer hover:underline hover:text-red-300"> <i class="fas fa-envelope"></i> stuadmin@mieps-edu.org </a>
+                    </div>
+                    
                 </div>
-                
-            </div>
-            <div class="border bg-blue-300 rounded-lg">
-                <p class="m-5">ဤသင်တန်းသည် အချိန်အားဖြင့် (၃) လ သတ်မှတ်ထားပြီး ဘူမိဗေဒ ဘွဲ့ကြို၊ ဘွဲ့လွန် ကျောင်းသူ ကျောင်းသားများ၊ ဆရာ ဆရာမများ၊ လုပ်ငန်းခွင် အသီးသီးတွင် ဝင်ရောက်လုပ်ကိုင်နေကြသော ဘူမိဗေဒ ဘွဲ့ရများပါ တက်ရောက်လေ့လာသင်ယူနိုင်ရန် စီစဉ်ထားပါသည်။ <a href="#" class="text-blue-500 underline">Read more</a></p>
-            </div>
-            <h3 class="text-center mt-6 mb-4 text-2xl font-bold">SPECIAL LECTURES</h3>
-            <div class="border-t-2 border-blue-500 my-4"></div>
-            <div class="mb-4">
-                <p class="text-center">Register for Special Lecture Series On</p>
-                <p class="font-bold text-center text-3xl text-red-400 my-6">"Tectonics of Myanmar and SE Asia"</p>
-                <div class="flex justify-center mt-2">
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2 ">Register</button>
+                <div class=" flex justify-center mr-24 space-x-9 my-5 lg:mx-5 lg:space-x-9 lg:my-5 lg:mr-20">
+                    <a href="https://www.facebook.com/MIEPSedu" target="_blank"><i class="fa-brands fa-facebook text-2xl"></i></a>
+                    <a href="https://t.me/+QqEEgcloOWc1MTU1" target="_blank"> <i class="fa-brands fa-telegram text-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/mieps-edu" target="_blank"><i class="fa-brands fa-linkedin text-2xl"></i></a>
                 </div>
             </div>
+           
         </div>
     </div>
-</section>
+    </footer>
+
     <script src="script.js"></script>
+   
 </body>
 </html>
