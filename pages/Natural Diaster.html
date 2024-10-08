@@ -3,48 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MIEPS WEB</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
     <link rel="stylesheet" href="../style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="bg-gray-100">
     <section id="info" class="relative w-full h-screen bg-cover bg-center flex flex-col items-center text-center p-5"
-         style="background-image: url('../images/edu-back.jpg');">
-         <img src="../images/logo.png" alt="logo" class="absolute left-0 top-0 m-9 w-20 h-14 sm:m-9 sm:ml-16 sm:w-20 sm:h-14 md:w-24 md:h-18 lg:w-28 lg:h-20">
+    style="background-image: url('../images/edu-back.jpg');">
+    <img src="../images/logo.png" alt="logo" class="absolute left-0 top-0 m-9 w-36 h-20 sm:m-9 sm:ml-16 sm:w-20 sm:h-14 md:w-24 md:h-18 lg:w-28 lg:h-20">
 
-        <div class="absolute top-0 right-0 p-5">
-            <button id="menu-btn" class="focus:outline-none burger mr-3 lg:hidden">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            <ul id="menu" class="hidden absolute top-6 right-8 bg-white p-5 mt-5 shadow-lg rounded-lg lg:flex lg:relative  lg:shadow-none lg:bg-transparent lg:gap-10 lg:whitespace-nowrap lg:mt-0">
-                <li class="text-blue-300 hover:text-blue-500 text-2xl"><a href="../index.html">Home</a></li>
-                <div class="border border-t-0 bg-slate-500"></div>
-                <li class="text-blue-300 hover:text-blue-500 text-2xl" ><a href="../pages/about.html">About Us</a></li>
-                <div class="border border-t-0 bg-slate-500"></div>
-                <li class="text-blue-300 hover:text-blue-500 text-2xl"><a href="../pages/education.html">Education</a></li>
-                <div class="border border-t-0 bg-slate-500"></div>
-                <li class="text-blue-300 hover:text-blue-500 text-2xl"><a href="../pages/research.html">Research</a></li>
-                <div class="border border-t-0 bg-slate-500"></div>
-                <li class="text-blue-300 hover:text-blue-500 text-2xl"><a href="../pages/news.html">News</a></li>
-                <div class="border border-t-0 bg-slate-500"></div>
-            </ul>
-        </div>
-        <div class="flex flex-col items-start text-left p-6 w-full md:p-16">
-            
-            <div class="pt-24 ml-5 h-2 md:pt-52 lg:ml-20 lg:pt-96 ">
-                <div class="border bg-black border-transparent">
-                    <p class="text-xs text-yellow-200 text-left m-5 md:text-2xl lg:text-2xl lg:text-justify">
-                        We conduct fundamental research on earth and planetary sciences of Myanmar and surrounding regions to better understand the nature of planet and sustainable development of clean, green and safer environment.
-                    </p>
-                </div>
-                
-            </div>
-        </div>
-        
-    </section>
+    <div class="absolute top-0 pt-14 pr-10 right-0 z-50">
+       <button id="menu-btn" class="focus:outline-none burger mr-3 lg:hidden flex flex-col justify-between w-10 h-8">
+           <div class="burger-line w-8 h-1 bg-black"></div>
+           <div class="burger-line w-8 h-1 bg-black"></div>
+           <div class="burger-line w-8 h-1 bg-black"></div>
+       </button>
+       
+       <ul id="menu"
+           class="hidden fixed inset-0 bg-gray-600 p-5 shadow-lg lg:flex lg:relative lg:shadow-none lg:bg-transparent lg:gap-10 lg:whitespace-nowrap lg:mt-0 lg:max-w-5xl lg:mx-auto">
+           
+           <button id="menu-close" class="absolute top-5 right-5 text-black text-4xl z-50 focus:outline-none lg:hidden">
+               &times;
+           </button>
+           
+           <li class="relative top-10 md:top-0 text-blue-300 hover:text-blue-500 text-2xl pt-5 "><a href="../index.html">Home</a></li>
+           <div class="relative top-12 md:top-0 border border-t-0 bg-slate-500 w-4/5 mx-auto lg:hidden"></div>
+           
+           <li class="relative top-16 md:top-0 text-blue-300 hover:text-blue-500 text-2xl pt-5"><a href="./about.html">About Us</a></li>
+           <div class="relative top-20 md:top-0 border border-t-0 bg-slate-500 w-4/5 mx-auto lg:hidden"></div>
+           
+           <li class="relative top-24 md:top-0 text-blue-300 hover:text-blue-500 text-2xl pt-5"><a href="./education.html">Education</a></li>
+           <div class="relative top-28 md:top-0 border border-t-0 bg-slate-500 w-4/5 mx-auto lg:hidden"></div>
+           
+           <li class="relative top-32 md:top-0 text-blue-300 hover:text-blue-500 text-2xl pt-5"><a href="./research.html">Research</a></li>
+           <div class="relative top-36 md:top-0 border border-t-0 bg-slate-500 w-4/5 mx-auto lg:hidden"></div>
+           
+           <li class="relative top-40 md:top-0 text-blue-300 hover:text-blue-500 text-2xl pt-5"><a href="./news.html">News</a></li>
+           <div class="relative top-44 md:top-0 border border-t-0 bg-slate-500 w-4/5 mx-auto lg:hidden"></div>
+           </ul>
+   </div>
+   
+   
+   <div class="relative items-start w-full h-screen">
+    <div class="md:ml-20 md:max-w-lg">
+        <p style="font-size: 20px; font-family: 'Inter', sans-serif;" 
+           class="absolute top-80 max-h-72 left-10 font-mono md:left-24 md:top-64 md:overflow-hidden overflow-y-scroll text-ellipsis whitespace-normal">
+           We conduct fundamental research on earth and planetary sciences of Myanmar and surrounding regions to better understand the nature of planet and sustainable development of clean, green and safer environment.The education programs and activities of the institute provide Diploma/Certificate, Undergraduate and Graduate programs for students and learners who are preparing for scientific and technical careers in academic, industry, government, and non-government organizations, accordingly the corresponding circumstances and strive for various professional development programs for faculty members individually and collectively without intervening academic freedom, with certainty the courses/programs to be research oriented and standard quality, destined for the skills of problem solving, critical thinking, communication, and strong interactions.
+        </p>
+    </div>
+</div>
+   
+   
+   
+</section>
 
     <section id="news-content">
         <div class="py-8 px-11 bg-blue-300 lg:py-8 lg:px-32">
@@ -180,40 +193,37 @@
         <div class="container mx-auto">
             <div class="flex flex-col lg:flex-row lg:justify-start lg:items-center space-x-6 space-y-4 lg:space-y-0 lg:space-x-28">
                 <!-- Logo and Text Column -->
-                <div class="flex flex-col items-center mb-4 lg:mb-0 lg:items-start">
+                <div class="flex flex-col items-center  lg:mb-0 lg:items-start xl:ml-60">
                     <img src="../images/bw-logo.gif" alt="logo" class="m-2 w-24 h-14 md:w-28 md:h-18 lg:w-28 lg:h-20">
-                    <p class="text-white font-bold text-center lg:text-left">Myanmar Institute of Earth and Planetary Sciences</p>
-                </div>
-                <div>
-                <!-- Navigation Links Column -->
-                    <ul class="flex gap-2 justify-center mr-7 lg:gap-4">
-                        <li class="text-blue-300 hover:text-blue-500 text-lg"><a href="#">Home</a></li>
-                        <li class="text-blue-300 hover:text-blue-500 text-lg"><a href="#">About Us</a></li>
-                        <li class="text-blue-300 hover:text-blue-500 text-lg"><a href="#">Education</a></li>
-                        <li class="text-blue-300 hover:text-blue-500 text-lg"><a href="#">Research</a></li>
-                        <li class="text-blue-300 hover:text-blue-500 text-lg"><a href="#">News</a></li>
-                    </ul>
-                    <div class="border border-t-2 mt-0 border-blue-600"></div>
-                </div>
-                <div>
-                    <div class="bg-blue-400 p-6 mt-6 rounded-tl-full rounded-br-full border-4 border-blue-500 shadow-lg max-w-sm mx-auto ">
-                        <div class="text-center">
-                            <p class="text-black font-bold text-center mr-4 my-2">Contact Us</p>
-                            <p class="text-black mr-2">Administration and Student Affairs</p>
-                            <a href="#" class="text-black mr-8 hover:cursor-pointer hover:underline hover:text-red-300"> <i class="fas fa-envelope"></i> stuadmin@mieps-edu.org </a>
-                        </div>
-                        
-                    </div>
-                    <div class=" flex justify-center mr-24 space-x-9 my-5 lg:mx-5 lg:space-x-9 lg:my-5 lg:mr-20">
-                        <a href="https://www.facebook.com/MIEPSedu" target="_blank"><i class="fa-brands fa-facebook text-2xl"></i></a>
-                        <a href="https://t.me/+QqEEgcloOWc1MTU1" target="_blank"> <i class="fa-brands fa-telegram text-2xl"></i></a>
-                        <a href="https://www.linkedin.com/in/mieps-edu" target="_blank"><i class="fa-brands fa-linkedin text-2xl"></i></a>
-                    </div>
+                    
                 </div>
                
+                
+                <div class="p-6 mt-6 mx-auto">
+                    <div class="text-center text-white">
+                        <p class="font-bold text-center mr-4 my-2">Contact Us</p>
+                        <p class="whitespace-nowrap">Administration and Student Affairs</p>
+                        <a href="#" class="mr-8 hover:cursor-pointer hover:underline hover:text-red-300"> 
+                            <i class="fas fa-envelope"></i> stuadmin@mieps-edu.org 
+                        </a>
+                    </div>
+                </div>
+                    <div class="flex flex-col justify-center items-center lg:items-start py-10 lg:my-5 lg:mx-5">
+                        <div class="flex space-x-9 mr-0 lg:mr-0">
+                            <a href="https://www.facebook.com/MIEPSedu" target="_blank"><i class="fa-brands fa-facebook text-2xl"></i></a>
+                            <a href="https://t.me/+QqEEgcloOWc1MTU1" target="_blank"> <i class="fa-brands fa-telegram text-2xl"></i></a>
+                            <a href="https://www.linkedin.com/in/mieps-edu" target="_blank"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                        </div>
+                        <p class="text-white font-bold text-center lg:text-left mt-3">Myanmar Institute of Earth and Planetary Sciences</p>
+                    </div>
+                
+               
+            </div>
+            <div>
+                <p class="text-center">© Copyright 2024  Myanmar Institute of Earth and Planetary Sciences</p>
             </div>
         </div>
-    </footer>
+        </footer>
 
     <script src="../script.js"></script>
 </body>

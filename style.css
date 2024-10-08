@@ -116,3 +116,18 @@
 .burger.cross div:nth-child(3) {
     transform: rotate(-45deg);
 }
+
+@media screen and (max-width: 390px) {
+    
+    .dynamic-paragraph {
+        top: 560px;
+    }
+}
+
+/* Media query for desktop screens */
+@media screen and (min-width: 1024px) {
+    
+    .dynamic-paragraph {
+        top: 450px;
+    }
+}
