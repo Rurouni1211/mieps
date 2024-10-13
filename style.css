@@ -134,28 +134,3 @@
     max-width: auto;
 }
 
-@media (max-width: 375px) {
-    .custom-heading {
-      top: 40% !important; /* Ensure this has priority */
-      left: 8% !important; 
-     
-    }
-    .custom-subheading {
-      top: 45% !important;
-      left: 0% !important;
-    }
-    .custom-paragraph {
-      top: 75% !important;
-      left: 5% !important;
-    }
-  }
-
-  /* For screens 390px or larger */
-  @media (min-width: 390px) {
-    
-    .custom-subheading {
-      top: 350px;
-     
-    }
-    
-  }
